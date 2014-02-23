@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Server monitor</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/socket.io.js"></script>
+	<script type="text/javascript" src="js/magic.js"></script>
+</head>
+<body>
+
+	<div id="connecting">
+		<div id="box">
+			<h1>Connecting</h1>
+			<p>Attempting to make a connection to the server...</p>
+		</div>
+	</div>
+
+	<header>
+		<h1>BeagleBoard Control</h1>
+		<h2><span class="icon">$</span><a href="https://github.com/rbeasse/BeagleBone-Web">View on github</a></h2>
+	</header>
+
+	<section id="wrapper">
+		<section class="top green">
+			<h1>Temperature</h1>
+			<h2>Reading from the TMP36</h2>
+			<div class="icon">%</div>
+			<h3 id="temp"></h3>
+		</section>
+		<section class="top red">
+			<h1>Uptime</h1>
+			<h2>Current uptime</h2>
+			<div class="icon">!</div>
+			<h3 id="uptime"></h3>
+		</section>
+		<section class="top_big">
+			<h1>CPU</h1>
+			<h2>Beaglebone CPU usage is <span id="cpu"></span>%</h2>
+			<canvas id="cpu_canvas" width="370" height="100">Uh oh, it looks like your browser does not support canvas at this time.</canvas>
+		</section>
+
+		<section class="large">
+			<h1>Welcome</h1>
+			<h2>by Ryan Beasse</h2>
+			<p>Hello world, this is a website for controlling and monitoring my BeagleBone Black. Everything you see is coded by myself, using the power of NodeJS with Bonescript and socket.io.
+
+			Enjoy your visit, however remember that most of the functionality requires you to see the board itself.</p>
+		</section>
+		
+		<section class="small">
+			<h1>Change the LED</h1>
+			<h2>Adjusts the color of the LED on the beaglebone.</h2>
+			<input id="led_pin_1" type="range" min="0" max="90" step="10" value="0">
+			<input id="led_pin_2" type="range" min="0" max="90" step="10" value="0">
+			<input id="led_pin_3" type="range" min="0" max="90" step="10" value="0">
+		</section>
+		<section class="full">
+			<h1>Graph that Potentiometer</h1>
+			<h2>Shows the current position of the potentiometer.</h2>
+			<canvas id="potentiometer_canvas" width="770" height="100">Uh oh, it looks like your browser does not support canvas at this time.</canvas>
+		</section>
+	</section>
+
+	
+	
+</body>
+</html>

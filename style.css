@@ -1,0 +1,180 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?lh485r');
+	src:url('fonts/icomoon.eot?#iefixlh485r') format('embedded-opentype'),
+		url('fonts/icomoon.woff?lh485r') format('woff'),
+		url('fonts/icomoon.ttf?lh485r') format('truetype'),
+		url('fonts/icomoon.svg?lh485r#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	background: #eee;
+}
+
+header {
+	background: -webkit-linear-gradient(#8a3c3c, #4f2222);
+	background: -o-linear-gradient(#8a3c3c, #4f2222); 
+	background: -moz-linear-gradient(#8a3c3c, #4f2222); 
+	background: linear-gradient(#8a3c3c, #4f2222);
+
+	color: white;
+	height: 40px;
+	clear: both;
+}
+
+header > h1 {
+	margin: 0;
+	font-size: 1.3em;
+	float: left;
+	line-height: 38px;
+	padding: 0 0 0 20px;
+	text-shadow: 0px 0px 1px black;
+}
+
+header > h2{
+	float: right;
+	font-size: .9em;
+	line-height: 38px;
+	margin: 0;
+	text-shadow: 0px 0px 1px black;
+	background: #4f2222;
+	padding: 1px 20px;
+}
+
+header > h3{
+	line-height: 50px;
+}
+
+header > h2 > a {
+	color: white;
+	text-decoration: none;
+}
+
+header > h2 > span {
+	text-shadow: none;
+	margin-right: 10px;
+}
+
+section#wrapper{
+	width: 800px;
+	margin: 15px auto;
+	clear: both;
+}
+
+section#wrapper > section {
+	background: white;
+	border-radius: 4px;
+	margin: 0 10px 10px 0;
+	padding: 8px 12px;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 1px #bbb;
+	min-height: 180px;
+}
+
+section#wrapper > section > h1 {
+	margin: 0;
+	padding: 0px;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+section#wrapper > section > h2 {
+	margin: 0;
+	padding: 0px;
+	font-size: .8em;
+	font-weight: normal;
+}
+
+section#wrapper > section > h3 {
+	margin: 0;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.icon {
+	font-family: icomoon;
+	text-align: center;
+}
+
+div.icon {
+	font-size: 5em;
+	padding: 16px 0;
+}
+
+.large {
+	width: 560px;
+	float: left;
+}
+
+.small {
+	width: 220px;
+	float: left;
+	height: 100%;
+}
+
+.full {
+	width: 790px;
+	clear: both;
+}
+
+#led_pin_1 {
+	margin-top: 15px;
+}
+
+input[type="range"]{
+	width: 95%;
+	background: #ccc;
+}
+
+canvas {
+	margin-top: 20px;
+}
+
+.top {
+	width: 185px;
+	float: left;
+	color: white;
+}
+
+.top_big{
+	width: 400px;
+	float: left;
+}
+
+.green {
+	background: #5e7743 !IMPORTANT;
+}
+
+.red {
+	background: #8a3c3c !IMPORTANT;
+}
+
+div#connecting {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: black;
+	opacity: .96;
+	cursor: wait;
+}
+div#box {
+	background: white;
+	width: 300px;
+	height: 80px;
+	border-radius: 4px;
+	margin: 50px auto;
+	padding: 10px;
+}
+
+div#box > h1 {
+	margin: 0;
+	font-size: 1.3em;
+}
